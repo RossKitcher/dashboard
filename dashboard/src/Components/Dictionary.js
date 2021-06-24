@@ -1,15 +1,12 @@
 import React from 'react';
 
-const divStyle = {
-    color:'white'
-};
 
-class About extends React.Component {
+class Dictionary extends React.Component {
     
     render() {
         return (
-            <div style={divStyle}>
-                <h2>About Page</h2>
+            <div>
+                <h2>Dictionary Page</h2>
                 <main>
                     <p>This section contains information about...</p>
                 </main>
@@ -20,4 +17,4 @@ class About extends React.Component {
 
 
 
-export default About;
+export default Dictionary;
