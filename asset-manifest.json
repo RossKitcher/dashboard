@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/dashboard/static/css/main.5c4bdc20.chunk.css",
-    "main.js": "/dashboard/static/js/main.b55b9c14.chunk.js",
-    "main.js.map": "/dashboard/static/js/main.b55b9c14.chunk.js.map",
+    "main.css": "/dashboard/static/css/main.b54a7899.chunk.css",
+    "main.js": "/dashboard/static/js/main.13f12263.chunk.js",
+    "main.js.map": "/dashboard/static/js/main.13f12263.chunk.js.map",
     "runtime-main.js": "/dashboard/static/js/runtime-main.f2318430.js",
     "runtime-main.js.map": "/dashboard/static/js/runtime-main.f2318430.js.map",
-    "static/js/2.ef40ec13.chunk.js": "/dashboard/static/js/2.ef40ec13.chunk.js",
-    "static/js/2.ef40ec13.chunk.js.map": "/dashboard/static/js/2.ef40ec13.chunk.js.map",
+    "static/js/2.38bd4596.chunk.js": "/dashboard/static/js/2.38bd4596.chunk.js",
+    "static/js/2.38bd4596.chunk.js.map": "/dashboard/static/js/2.38bd4596.chunk.js.map",
     "static/js/3.10d6e585.chunk.js": "/dashboard/static/js/3.10d6e585.chunk.js",
     "static/js/3.10d6e585.chunk.js.map": "/dashboard/static/js/3.10d6e585.chunk.js.map",
     "index.html": "/dashboard/index.html",
-    "static/css/main.5c4bdc20.chunk.css.map": "/dashboard/static/css/main.5c4bdc20.chunk.css.map",
-    "static/js/2.ef40ec13.chunk.js.LICENSE.txt": "/dashboard/static/js/2.ef40ec13.chunk.js.LICENSE.txt",
+    "static/css/main.b54a7899.chunk.css.map": "/dashboard/static/css/main.b54a7899.chunk.css.map",
+    "static/js/2.38bd4596.chunk.js.LICENSE.txt": "/dashboard/static/js/2.38bd4596.chunk.js.LICENSE.txt",
     "static/media/arcade.4776b94a.jpg": "/dashboard/static/media/arcade.4776b94a.jpg",
-    "static/media/background2.3093f4ec.png": "/dashboard/static/media/background2.3093f4ec.png",
+    "static/media/home.c89db166.jpg": "/dashboard/static/media/home.c89db166.jpg",
     "static/media/linux.6fa5d9b8.jpg": "/dashboard/static/media/linux.6fa5d9b8.jpg",
     "static/media/pickle.3feade33.jpg": "/dashboard/static/media/pickle.3feade33.jpg",
     "static/media/robot.468ba0c3.jpg": "/dashboard/static/media/robot.468ba0c3.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.f2318430.js",
-    "static/js/2.ef40ec13.chunk.js",
-    "static/css/main.5c4bdc20.chunk.css",
-    "static/js/main.b55b9c14.chunk.js"
+    "static/js/2.38bd4596.chunk.js",
+    "static/css/main.b54a7899.chunk.css",
+    "static/js/main.13f12263.chunk.js"
   ]
 }
