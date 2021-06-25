@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 import landing from '../../img/robot.jpg'
 import error from '../../img/robot/404.jpg';
@@ -29,41 +29,45 @@ import wpscan from '../../img/robot/wpscan.jpg';
 class MrRobot extends React.Component {
     render() {
         return (
-            <div className="writeup">
+            <div className="writeup" >
                
-                    <div className="container-fluid">
+                    <div className="container-fluid" >
                     <div className="row bg-dark ">
                         <nav className="col-3 px-1 position-fixed offset" id="sticky-sidebar">
                             <a href="https://tryhackme.com/room/mrrobot" target="_blank" className="nav-header">Mr Robot</a>
                             <hr></hr>
-                            <ul className="nav nav-pills flex-column mb-auto">
+
+
+                            
+                            <ul className="nav nav-pills flex-column mb-auto" >
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="#intro">1. Introduction</Link>
+                                    <NavLink className="nav-link" to="#intro">1. Introduction</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="#enumeration">2. Enumeration</Link>
-                                    <Link className="nav-link level-2" to="#portscan">a. Port Scanning</Link>
-                                    <Link className="nav-link level-2" to="#webenum">b. Web Enumeration</Link>
-                                    <Link className="nav-link level-3" to="#key1">i. Key 1</Link>
+                                    <NavLink className="nav-link" to="#enumeration">2. Enumeration</NavLink>
+                                    <NavLink className="nav-link level-2" to="#portscan">a. Port Scanning</NavLink>
+                                    <NavLink className="nav-link level-2" to="#webenum">b. Web Enumeration</NavLink>
+                                    <NavLink className="nav-link level-3" to="#key1">i. Key 1</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" href="#section3">3. Exploitation</Link>
-                                    <Link className="nav-link level-2" to="#section2">a. Wordpress</Link>
+                                    <NavLink className="nav-link" to="#exploitation">3. Exploitation</NavLink>
+                                    <NavLink className="nav-link level-2" to="#wordpress">a. Wordpress</NavLink>
                                 </li>
                                 <li className="nav-item">
 
-                                    <Link className="nav-link" href="#">4. Privilege Escalation</Link>
-                                    <Link className="nav-link level-2" to="#section2">a. User: robot</Link>
-                                    <Link className="nav-link level-3" to="#section2">i. Key 2</Link>
-                                    <Link className="nav-link level-2" to="#section2">b. User: root</Link>
-                                    <Link className="nav-link level-3" to="#section2">i. Key 3</Link>
+                                    <NavLink className="nav-link" to="#privesc">4. Privilege Escalation</NavLink>
+                                    <NavLink className="nav-link level-2" to="#robot">a. User: robot</NavLink>
+                                    <NavLink className="nav-link level-3" to="#key2">i. Key 2</NavLink>
+                                    <NavLink className="nav-link level-2" to="#root">b. User: root</NavLink>
+                                    <NavLink className="nav-link level-3" to="#key3">i. Key 3</NavLink>
                                 </li>
                             </ul>
+
                             <hr></hr>
 
                                                       
                         </nav>
-                        <div className="content col offset-3 scrollspy" data-sbs-py="scroll" data-bs-target="#sticky-sidebar" data-bs-offset="0" tabindex="0">
+                        <div className="content col offset-3"  id="writeup-robot">
                             <div>
                                 <div className="carousel landing">
                                     <div className="carousel-inner">
@@ -74,19 +78,20 @@ class MrRobot extends React.Component {
                                     </div>
                                 </div>
                             </div>
+                            <div id="intro">
+                                <h1>Introduction</h1>
+                                <p>This box is based on the Mr. Robot show and is a fun beginner/intermediate CTF.</p>
+                                <p>This box falls into the following categories:</p>
+                                <ul>
+                                    <li>Linux</li>
+                                    <li>Wordpress</li>
+                                    <li>Misconfiguration</li>
+                                </ul>
+                                <hr></hr>
                             
-                            <h1 id="intro">Introduction</h1>
-                            <p>This box is based on the Mr. Robot show and is a fun beginner/intermediate CTF.</p>
-                            <p>This box falls into the following categories:</p>
-                            <ul>
-                                <li>Linux</li>
-                                <li>Wordpress</li>
-                                <li>Misconfiguration</li>
-                            </ul>
-                            <hr></hr>
-                            
-                            <div id="section2">
-                                <h1 id="enumeration">Enumeration</h1>
+                            </div>
+                            <div id="enumeration">
+                                <h1>Enumeration</h1>
                                 
                                 <h3 id="portscan">Port Scanning</h3>
                                 <p>First, I used nmap to scan the box.</p>
@@ -146,8 +151,10 @@ class MrRobot extends React.Component {
                                     <figcaption className="figure-caption">results from wpscan.</figcaption>
                                 </figure>
                                 <hr></hr>
+                            </div>
+                            <div id="exploitation">
                                 <h1>Exploitation</h1>
-                                <h3>Wordpress</h3>
+                                <h3 id="wordpress">Wordpress</h3>
                                 <p>The results from this scan unfortunately did not provide much information. Although, a Wordpress version of 4.3.1 was found which is identified as insecure.</p>
                                 <p>One feature of Wordpress’s login page is that it will tell you if the username is correct, this makes it relatively easy to guess a username. </p>
                                 <figure className="figure">
@@ -199,8 +206,10 @@ class MrRobot extends React.Component {
                                 </figure>
                                 <p>Now I have a shell, I stabilised it and started manually enumerating the server.</p>
                                 <hr></hr>
+                            </div>
+                            <div id="privesc">
                                 <h1>Privilege Escalation</h1>
-                                <h3>User: robot</h3>
+                                <h3 id="robot">User: robot</h3>
                                 <p>Pretty quickly I found credentials in <span className="code-snippet inline">/home/robot</span>:</p>
                                 <figure className="figure">
                                     <img src={creds} className="figure-img img-fluid rounded" alt="nmap scan results"></img>
@@ -219,14 +228,14 @@ class MrRobot extends React.Component {
                                     <img src={su} className="figure-img img-fluid rounded" alt="nmap scan results"></img>
                                     <figcaption className="figure-caption">cracked password with hashcat.</figcaption>
                                 </figure>
-                                <h5>Key 2</h5>
+                                <h5 id="key2">Key 2</h5>
                                 <p>Now I have permissions to view the second key:</p>
                                 <figure className="figure">
                                     <img src={key2} className="figure-img img-fluid rounded" alt="nmap scan results"></img>
                                     <figcaption className="figure-caption">second key found.</figcaption>
                                 </figure>
                                 <hr></hr>
-                                <h3>User: root</h3>
+                                <h3 id="root">User: root</h3>
                                 <p>I tried some more manual enumeration which led me to checking all files with the SUID bit set.</p>
                                 <p className="code-snippet">&gt; find / -perm /4000 2&gt;/dev/null</p>
                                 <p>The above command explained:</p>
@@ -249,19 +258,19 @@ class MrRobot extends React.Component {
                                     <img src={privEsc} className="figure-img img-fluid rounded" alt="nmap scan results"></img>
                                     <figcaption className="figure-caption">using nmap to get root.</figcaption>
                                 </figure>
-                                <h5>Key 3</h5>
+                                <h5 id="key3">Key 3</h5>
                                 <p>With root access, I can now view the final key.</p>
                                 <figure className="figure">
                                     <img src={key3} className="figure-img img-fluid rounded" alt="nmap scan results"></img>
                                     <figcaption className="figure-caption">final key found.</figcaption>
                                 </figure>
                             
-                            
-                            
-                            
-                            
-                            
                             </div>
+                            
+                            
+                            
+                            
+                            
                             
                         </div>
                     </div>

@@ -254,3 +254,9 @@ hr {
     display: inline-block;
     color:white;
 }
+
+#writeup-robot {
+    position: relative!important;
+    overflow-y:scroll;
+    height: fit-content;
+}
