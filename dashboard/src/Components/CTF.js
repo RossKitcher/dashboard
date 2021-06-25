@@ -24,7 +24,7 @@ class CTF extends React.Component {
                     categories: ['Wordpress', 'Linux', 'CVE'],
                     img: robot,
                     show: true,
-                    route: "/dashboard/MrRobot",
+                    route: "/MrRobot",
 
                 },
                 {
@@ -35,7 +35,7 @@ class CTF extends React.Component {
                     categories: ['Wordpress', 'Linux', 'CVE'],
                     img: pickle,
                     show: true,
-                    route: "/dashboard/PickleRick",
+                    route: "/PickleRick",
 
 
                 },
@@ -47,7 +47,7 @@ class CTF extends React.Component {
                     categories: [],
                     img: linux,
                     show: true,
-                    route: "/dashboard/RootMe",
+                    route: "/RootMe",
 
 
                 },
@@ -59,7 +59,7 @@ class CTF extends React.Component {
                     categories: ['Wordpress', 'Linux'],
                     img: arcade,
                     show: true,
-                    route: "/dashboard/Retro",
+                    route: "/Retro",
 
 
                 },

@@ -11,6 +11,8 @@
     width: 100%;
   }
 
+
+
 /*--- Navigation --*/
 .navbar {
     text-transform: uppercase;
@@ -147,16 +149,54 @@ color: #1EFE37!important;
 
 .writeup .navbar {
     background-color: black!important;
+
 }
 .writeup .nav .nav-link {
     color: white!important;
+    font-size: 1.4rem;
+    font-weight: 600;
 
 }
 .writeup .nav .nav-link:active,
 .writeup .nav .nav-link:focus,
 .writeup .nav .nav-link:hover {
-    color: #1EE5FE!important;
+    color: #1EFE37!important;
+    background-color: black;
 
+}
+
+.writeup .nav .nav-link.level-2 {
+    color: white!important;
+    font-size: 1rem;
+    margin-left: 2rem;
+    padding-left: 1rem;
+    font-weight: 500;
+
+}
+.writeup .nav .nav-link.level-3 {
+    color: white!important;
+    font-size: 1rem;
+    margin-left: 5rem;
+    padding-left:1rem;
+    font-weight: 500;
+
+}
+
+.writeup .nav-header {
+    color: #ffffff;
+    font-size: 2.8rem;
+    padding: .6rem 1rem 0 1rem;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.writeup .nav-header:hover {
+    color: #1EFE37;
+}
+
+hr {
+    color: white;
 }
 .content {
     background-color: #262626;
@@ -166,4 +206,51 @@ color: #1EFE37!important;
     color: #1EE5FE;
     font-weight: 700;
     letter-spacing: .1rem;
+}
+.content h3 {
+    color: #1AC8DE;
+}
+.content h5 {
+    color: #138F9F;
+    font-size: 1.8rem;
+}
+
+.scrollspy {
+    height:max-content;
+    overflow-y:scroll;
+    position: relative!important;
+}
+
+.writeup-container {
+    height: 200px;
+}
+
+.writeup-landing {
+    display: block;
+    width: 100%!important;
+    height: auto;
+
+}
+.code-snippet {
+    display: inline-block;
+    padding: .4rem 1rem!important;
+    background-color: black;
+    border-radius: 10px;
+    color: #1EFE37;
+    letter-spacing: .05rem;
+    
+}
+.code-snippet.inline{
+    display: inline;
+    margin: 0!important;
+    padding: 0 .5rem!important;
+    
+}
+
+.hint {
+    background-color: #6b6b6b;
+    border-radius: 10px;
+    padding: .4rem 1rem!important;
+    display: inline-block;
+    color:white;
 }

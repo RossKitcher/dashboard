@@ -12,20 +12,20 @@ function App() {
     
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         
-        <Link className="navbar-brand" to="/dashboard">ross-dashboard</Link>
+        <Link className="navbar-brand" to="/">ross-dashboard</Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ">
             <li className="nav-item">
-              <Link className="nav-link" to="/dashboard">Home</Link>
+              <Link className="nav-link" to="/">Home</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/dashboard/CTF">CTF</Link>
+              <Link className="nav-link" to="/CTF">CTF</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/dashboard/Dictionary">Dictionary</Link>
+              <Link className="nav-link" to="/Dictionary">Dictionary</Link>
             </li>
           </ul>
         </div>
@@ -35,26 +35,26 @@ function App() {
 
       
       <Switch>
-        <Route exact path="/dashboard">
+        <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/dashboard/CTF">
+        <Route path="/CTF">
           <CTF />
         </Route>
-        <Route path="/dashboard/Dictionary">
+        <Route path="/Dictionary">
           <Dictionary />
         </Route>
                
-        <Route path="/dashboard/MrRobot">
+        <Route path="/MrRobot">
             <MrRobot />
         </Route>
-        <Route path="/dashboard/PickleRick">
+        <Route path="/PickleRick">
             <MrRobot />
         </Route>
-        <Route path="/dashboard/RootMe">
+        <Route path="/RootMe">
             <MrRobot />
         </Route>
-        <Route path="/dashboard/Retro">
+        <Route path="/Retro">
             <MrRobot />
         </Route>
 
